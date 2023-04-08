@@ -1,0 +1,54 @@
+body {
+   background-color: #827b7b;
+   color: #f3ec49;
+}
+
+.table {
+   width: 100%;
+   border-collapse: collapse;
+   border: 2px solid #ddd;
+   font-size: 1.2rem;
+}
+
+.weekend {
+   color: red;
+}
+
+.table td {
+   border: 1px solid #ddd;
+   padding: 0.5rem;
+   text-align: center;
+   position: relative;
+}
+
+.table td:nth-of-type(2n),
+.table td:nth-of-type(2n+1) {
+   background-color:  #020000;
+}
+
+td.selected:after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 1.5rem;
+   height: 1.5rem;
+   border-radius: 50%;
+   background-color: orange;
+}
+
+.select,
+.input-number,
+.btn {
+   border: 4px solid red;
+   background: black;
+   color: wheat;
+}
+
+.div {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+}
